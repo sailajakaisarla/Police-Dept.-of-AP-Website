@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Services Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-blue: #7B0323;
+            --accent-gold: #c0a062;
+            --bg-light: #f4f7f9;
+            --white: #ffffff;
+            --text-dark: #2d3748;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--primary-blue);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo { font-weight: bold; font-size: 1.5rem; letter-spacing: 1px; }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(26, 54, 93, 0.8), rgba(26, 54, 93, 0.8)), 
+                        url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            color: white;
+            padding: 60px 5%;
+            text-align: center;
+        }
+
+        /* Grid Layout */
+        .container {
+            max-width: 1200px;
+            margin: -40px auto 40px;
+            padding: 0 20px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        /* Cards */
+        .card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 4px solid var(--accent-gold);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .card i {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+        }
+
+        .card h3 { margin: 0 0 15px 0; color: var(--primary-blue); }
+
+        .card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .card ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #edf2f7;
+        }
+
+        .card ul li a {
+            text-decoration: none;
+            color: #4a5568;
+            font-size: 0.95rem;
+        }
+
+        .card ul li a:hover { color: var(--accent-gold); }
+
+        /* Emergency Button */
+        .emergency-btn {
+            background: #e53e3e;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo"><i class="fas fa-shield-alt"></i> CITIZEN PORTAL</div>
+    <a href="#" class="emergency-btn"><i class="fas fa-phone-alt"></i> EMERGENCY: 100/112</a>
+</nav>
+
+<section class="hero">
+    <h1>Digital Police & Community Services</h1>
+    <p>Ensuring safety and justice through accessible technology.</p>
+</section>
+
+<div class="container">
+    <div class="services-grid">
+        
+        <div class="card">
+            <i class="fas fa-file-invoice"></i>
+            <h3>Complaints & FIR</h3>
+            <ul>
+                <li><a href="C:\Users\WINDOWS\OneDrive\Desktop\New folder\Contact page.html"><i class="fas fa-plus-circle"></i> Register Complaint</a></li>
+                <li><a href="C:\Users\WINDOWS\OneDrive\Desktop\New folder\Contact page.html"><i class="fas fa-gavel"></i> FIR Services</a></li>
+                <li><a href="C:\Users\WINDOWS\OneDrive\Desktop\New folder\Contact page.html"><i class="fas fa-search-location"></i> Track Status</a></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-hands-helping"></i>
+            <h3>Women & Child Safety</h3>
+            <p>Specialized assistance and reporting for vulnerable groups.</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-user-secret"></i>
+            <h3>Cyber Crime</h3>
+            <p>Report online fraud, identity theft, or social media harassment.</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-traffic-light"></i>
+            <h3>Traffic Services</h3>
+            <p>E-Challan payments, traffic rules, and road safety advisories.</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-certificate"></i>
+            <h3>Verification</h3>
+            <p>Police clearance, tenant verification, and character certificates.</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-users"></i>
+            <h3>Community Services</h3>
+            <p>Join neighborhood watch or view missing person reports.</p>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter Animation</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #7B0323;
+            font-family: Arial, sans-serif;
+            margin: 0; /* Prevent default margin */
+        }
+
+        .word {
+            font-size: 5rem;
+            font-weight: bold;
+        }
+
+        .letter {
+            display: inline-block;
+            opacity: 0; 
+            transform: translateY(20px); 
+            animation: fadeInUp 0.5s forwards; /* Animate */
+            color: #FFFDD0;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Delay each letter's animation */
+        .letter:nth-child(1) { animation-delay: 0.3s; }
+        .letter:nth-child(2) { animation-delay: 0.4s; }
+        .letter:nth-child(3) { animation-delay: 0.5s; }
+        .letter:nth-child(4) { animation-delay: 0.6s; }
+        .letter:nth-child(5) { animation-delay: 0.7s; }
+
+        .statement {
+            font-size: 2rem; /* Adjust font size for the statement */
+            margin-top: 20px; /* Space between HELLO and the statement */
+            opacity: 0; /* Start hidden */
+            animation: fadeIn 1s forwards; /* Fade-in animation */
+            animation-delay: 1s; /* Delay to start after HELLO animation */
+            color: #FFFDD0;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        /* Style for the link */
+        a {
+            text-decoration: none; /* Remove underline from link */
+            color: inherit; /* Make link color inherit from parent */
+        }
+    </style>
+</head>
+<body>
+    <a href="C:\Users\WINDOWS\OneDrive\Desktop\New folder\web.html"> <!-- Replace with your target page URL -->
+        <div class="word">
+            <span class="letter">A</span>
+            <span class="letter">P</span>
+            <span class="letter">S</span>
+            <span class="letter">P</span>
+        </div>
+    </a>
+    <div class="statement">Satyameva Jayate (Truth Alone Triumphs)...</div> 
+</body>
+</html>
